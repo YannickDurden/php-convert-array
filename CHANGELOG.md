@@ -11,3 +11,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## 0.0.2
 
 - Update read.me for marketplace
+
+## 0.0.3
+
+- No change(s) for common user

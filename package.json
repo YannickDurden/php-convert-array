@@ -3,8 +3,8 @@
 	"displayName": "PHP Transform Array",
 	"description": "Transform PHP Array old syntax to the new one",
 	"author": "Yannick François <y.francois54@gmail.com>",
-	"version": "0.0.2",
-	"publisher": "phpyannick",
+	"version": "0.0.3",
+	"publisher": "Yannick",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/YannickDurden/php-transform-array"
