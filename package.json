@@ -5,6 +5,10 @@
 	"author": "Yannick François <y.francois54@gmail.com>",
 	"version": "0.0.1",
 	"publisher": "phpyannick",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/YannickDurden/php-transform-array"
+	},
 	"engines": {
 		"vscode": "^1.49.0"
 	},
