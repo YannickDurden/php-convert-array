@@ -3,6 +3,8 @@
 ## Features
 
 As PHPStorm, now you can transform PHP array old syntax to the new one.
+- Select array you want to transform (`array('foo', 'bar')`)
+- Open control panel (ctrl + shift +p) and call **php transform array**.
 
 ## Requirements
 
