@@ -1,10 +1,10 @@
-# PHP Transform Array
+# PHP Convert Array
 
 ## Features
 
-As PHPStorm, now you can transform PHP array old syntax to the new one.
-- Select array you want to transform (`array('foo', 'bar')`)
-- Open control panel (ctrl + shift +p) and call **php transform array**.
+As PHPStorm, you can convert array long syntax to the shorthand.
+- Select array you want to convert (`array('foo', 'bar')`)
+- Open control panel (ctrl + shift +p) and call **php convert array**.
 
 ## Requirements
 

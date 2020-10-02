@@ -1,17 +1,9 @@
 # Change Log
 
-All notable changes to the "php-transform-array" extension will be documented in this file.
+All notable changes to the "php-convert-array" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 ## 0.0.1
 
 - Initial release
-
-## 0.0.2
-
-- Update read.me for marketplace
-
-## 0.0.3
-
-- No change(s) for common user

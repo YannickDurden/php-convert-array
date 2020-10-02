@@ -6,8 +6,8 @@ import * as vscode from 'vscode';
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 	let disposable = vscode.commands.registerTextEditorCommand(
-		'php-transform-array.transformArray',
-		transformSyntax
+		'php-convert-array.convertArray',
+		convertArray
 	);
 
 	context.subscriptions.push(disposable);
@@ -16,23 +16,23 @@ export function activate(context: vscode.ExtensionContext) {
 // this method is called when your extension is deactivated
 export function deactivate() {}
 
-function transformSyntax(editor: vscode.TextEditor): Thenable<boolean> {
+function convertArray(editor: vscode.TextEditor): Thenable<boolean> {
 	return editor.edit(editBuilder => {
 	  editor.selections.forEach(selection => {
 		const range = new vscode.Range(selection.start, selection.end);
-		const text = editor.document.getText(range) || '';
-		const matches = text.match(/(?=.*[a-zA-Z]).+/g);
+		let selectedText = editor.document.getText(range) || '';
+		const matches = selectedText.match(/(?=.*[a-zA-Z]).+/g);
 
-		const start = text?.substring(0, 6);
-		const end = text?.substring(text.length - 1);
+		const start = selectedText?.substring(0, 6);
+		const end = selectedText?.substring(selectedText.length - 1);
 
 		if (!matches || !matches.length || start !== 'array(' || end !== ')') {
 		  return;
 		}
 
-		const textWithNewSyntax = text.replace(start, '[').replace(/.$/,"]");
+		selectedText = selectedText.replace(start, '[').replace(/.$/,"]");
 
-		editBuilder.replace(selection, textWithNewSyntax);
+		editBuilder.replace(selection, selectedText);
 	  });
 	});
   }

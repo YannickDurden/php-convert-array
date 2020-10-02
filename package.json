@@ -1,13 +1,13 @@
 {
-	"name": "php-transform-array",
-	"displayName": "PHP Transform Array",
-	"description": "Transform PHP Array old syntax to the new one",
+	"name": "php-convert-array",
+	"displayName": "PHP Convert Array",
+	"description": "Convert Arrays to Short Syntax",
 	"author": "Yannick François <y.francois54@gmail.com>",
-	"version": "0.0.3",
+	"version": "0.0.1",
 	"publisher": "Yannick",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/YannickDurden/php-transform-array"
+		"url": "https://github.com/YannickDurden/php-convert-array"
 	},
 	"engines": {
 		"vscode": "^1.49.0"
@@ -17,16 +17,24 @@
 	],
 	"activationEvents": [
 		"onLanguage:php",
-		"onCommand:php-transform-array.transformArray"
+		"onCommand:php-convert-array.convertArray"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "php-transform-array.transformArray",
+				"command": "php-convert-array.convertArray",
 				"title": "PHP Transform array"
 			}
-		]
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "php-convert-array.convertArray",
+					"when": "editorLangId == php"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
