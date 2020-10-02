@@ -24,7 +24,7 @@
 		"commands": [
 			{
 				"command": "php-convert-array.convertArray",
-				"title": "PHP Transform array"
+				"title": "PHP Convert Array"
 			}
 		],
 		"menus": {

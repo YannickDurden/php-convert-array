@@ -4,7 +4,7 @@
 
 As PHPStorm, you can convert array long syntax to the shorthand.
 - Select array you want to convert (`array('foo', 'bar')`)
-- Open control panel (ctrl + shift +p) and call **php convert array**.
+- Open control panel (ctrl + shift +p) and call **PHP Convert Array**.
 
 ## Requirements
 
