@@ -20,5 +20,8 @@ Users appreciate release notes as you update your extension.
 
 Initial release.
 
+### 0.0.2
+
+Right click can be used to call extension
 
 **Enjoy!**
