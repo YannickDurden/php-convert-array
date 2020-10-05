@@ -33,7 +33,12 @@
 					"command": "php-convert-array.convertArray",
 					"when": "editorLangId == php"
 				}
-			]
+			],
+			"editor/context": [{
+				"when" : "editorLangId == php",
+				"command": "php-convert-array.convertArray",
+				"group": "1_modification"
+			}]
 		}
 	},
 	"scripts": {
