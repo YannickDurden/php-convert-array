@@ -11,3 +11,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## 0.0.2
 
 - package.json : extension added to contextual menu
+
+## 0.0.3
+
+- extension.ts : move convertArray function to new file
+- convertArray.ts : allow to convert array when semi-colon is selected and handle multiple arrays
