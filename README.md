@@ -25,7 +25,7 @@ Initial release.
 
 Right click can be used to call extension
 
-## 0.0.3
+### 0.0.3
 
 - extension.ts : move convertArray function to new file
 - convertArray.ts : allow to convert array when semi-colon is selected and handle multiple arrays
